@@ -1,14 +1,17 @@
-<!doctype html>
+doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Our Portfolio</title>
+        <title>Homepage || JSB GROUP</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
+        <link href='https://fonts.googleapis.com/css?family=Aptos:300,400,600,700|Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'> 
+       
+
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
         <!-- CSS
         ============================================ -->
@@ -31,20 +34,25 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
         <style>
-            .img-thumbnail {
-              width: 100%;
-              height: auto;
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: #000;
+                border-radius: 50%;
             }
-            .img-container {
-              margin-bottom: 15px;
+    
+            .carousel-control-prev-icon::before,
+            .carousel-control-next-icon::before {
+                color: #fff;
             }
         </style>
 
     </head>
-    <body>
-           
+    <body>        
 		<!-- Header Area Start -->
 		<header class="header-area">
 		    <div class="header-top-area bg-dark-1 d-none d-md-block">
@@ -98,7 +106,7 @@
 		    </div>
 		</header>
 		<!-- Header Area End -->
-		<!-- Breadcrumb Area Start-->
+		<!-- Background Area Start -->
 		<div class="breadcrumb-area overlay-4  bg-10 ptb-70">	
 			<div class="container">
 				<div class="row justify-content-center">
@@ -117,53 +125,155 @@
 			</div>
 		</div>
 
-        <section>
-            <p></p>
-            <h3 style="color: red; font-weight: bold; font-size: 50px; margin-left: 10px;">Food & Beverage:</h3>
-            <p></p>
-            <div class="container mt-4">
-                <div class="row justify-content-center">
-                  <a class="col-md-3 img-container"  href="https://theyellowchillime.com/">
-                    <img src="assets/images/portfolio/NewYellowChilli.png" alt="Image 1">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.biryaniboxme.com/">
-                    <img src="assets/images/portfolio/NewBiryaniBox.png" alt="Image 2">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.khichditalesme.com/">
-                    <img src="assets/images/portfolio/NewKhichdiTales.png" alt="Image 3">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewBeijingChina.png" alt="Image 4">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewHongKong.png" alt="Image 5">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://pressmans.com/">
-                    <img src="assets/images/portfolio/NewPressman.png" alt="Image 6">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.parathatales.com/">
-                    <img src="assets/images/portfolio/NewParathaTales.png" alt="Image 7">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewPizzaTales.png" alt="Image 8">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewThaliTales.png" alt="Image 9">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewMonkeyBox.png" alt="Image 10">
-                  </a>
-                  <a class="col-md-3 img-container">
-                    <img src="assets/images/portfolio/NewBoosterJuice.png" alt="Image 11">
-                  </a>
+        <section class="team-area" style="margin-top: 110px;">
+            <center><h3 style="color: #9f1c20; font-weight: bold; font-size: 50px; padding-top: 20px;">Retail</h3></center>
+            <div class="container">
+                <div id="teamCarousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewNB.png" alt="Image 8"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewZeroG.png" alt="Image 9"></div>  
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewTargetOne.png" alt="Image 10"></div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewMotiv8.png" alt="Image 9"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewActiv8.png" alt="Image 9"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewInov8.png" alt="Image 9"></div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-              </div>
+            </div>
+        </section>
+		
+
+        <section class="team-area" style="margin-top: 110px;">
+            <center><h3 style="color: #9f1c20; font-weight: bold; font-size: 50px; padding-top: 20px;">Food & Beverage</h3></center>
+            <div class="container">
+                <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewYellowChilli.png" alt="Image 1"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewBiryaniBox.png" alt="Image 2"></div>  
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewKhichdiTales.png" alt="Image 3"></div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewBeijingChina.png" alt="Image 4"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewHongKong.png" alt="Image 5"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewPressman.png" alt="Image 6"></div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewParathaTales.png" alt="Image 7"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewPizzaTales.png" alt="Image 8"></div> 
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewThaliTales.png" alt="Image 9"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewMonkeyBox.png" alt="Image 10"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team">
+                                        <div class="team-image"><img src="assets/images/portfolio/NewBoosterJuice.png" alt="Image 11"></div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <p></p>
-            <h3 style="color: red; font-weight: bold; font-size: 50px; padding-top: 20px; margin-left: 10px;">Fitness:</h3>
-            <p></p>
+
+        <section style="margin-top: 110px;">
+            <center><h3 style="color: #9f1c20; font-weight: bold; font-size: 50px;">Sports & Fitness</h3></center>
             <div class="container mt-4">
                 <div class="row justify-content-center">
                     <a class="col-md-3 img-container" href="https://www.snapfitness.com/ae">
@@ -173,9 +283,10 @@
             </div>
         </section>
 
+
         <section>
             <p></p>
-            <h3 style="color: red; font-weight: bold; font-size: 50px; padding-top: 20px; margin-left: 10px;">Technology:</h3>
+            <center><h3 style="color: #9f1c20; font-weight: bold; font-size: 50px;">Technology</h3></center>
             <p></p>
             <div class="container mt-4">
                 <div class="row justify-content-center">
@@ -186,37 +297,10 @@
               </div>
         </section>
 
-        <section>
-            <p></p>
-            <h3 style="color: red; font-weight: bold; font-size: 50px; padding-top: 20px; margin-left: 10px;">Retail:</h3>
-            <p></p>
-            <div class="container mt-4">
-                <div class="row justify-content-center">
-                  <a class="col-md-3 img-container" href="https://nbventuresme.com">
-                    <img src="assets/images/portfolio/NewNB.png" alt="Image 8">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://zerogmattress.ae/">
-                    <img href="https://zerogmattress.ae/" src="assets/images/portfolio/NewZeroG.png" alt="Image 9">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://targetoneme.com/">
-                    <img src="assets/images/portfolio/NewTargetOne.png" alt="Image 10">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.motiv8.ae/">
-                    <img src="assets/images/portfolio/NewMotiv8.png" alt="Image 9">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.activ8.ae/">
-                    <img src="assets/images/portfolio/NewActiv8.png" alt="Image 9">
-                  </a>
-                  <a class="col-md-3 img-container" href="https://www.inov8.ae/">
-                    <img src="assets/images/portfolio/NewInov8.png" alt="Image 9">
-                  </a>
-                </div>
-            </div>
-        </section>
 
         <section>
             <p></p>
-            <h3 style="color: red; font-weight: bold; font-size: 50px; padding-top: 20px; margin-left: 10px;">Furniture:</h3>
+            <center><h3 style="color: #9f1c20; font-weight: bold; font-size: 50px;">Interior Fitout & Outdoor Furniture</h3></center>
             <p></p>
             <div class="container mt-4">
                 <div class="row justify-content-center">
@@ -225,12 +309,14 @@
                   </a>
                 </div>
             </div>
-            
         </section>
-  
-		<!-- Portfolio Area Start -->
+
+        
+        
 		
-		<!-- Portfolio Area End -->
+		
+        
+        <!-- Blog Area End -->
         <!-- Footer Area Start -->
         <footer class="footer-area bg-7 overlay-6">
             <div class="footer-widget-area ptb-110">
@@ -241,28 +327,10 @@
                                 <div class="footer-logo">
                                     <a href="index.html"><img src="assets/images/logo/JSB Group Logo.png" alt="Conjoint"></a>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipil elit sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Perspiciatis quisquam nulla, aspernatur minima iure animi temper.</p>
+                                <p>Crafting Tomorrow's Experiences: Retail & Distribution, Food & Beverage, Sports & Fitness, Technology, and Interior Fitout & Outdoor Furniture for a Brighter Future. </p>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-3 col-md-4 col-sm-7">
-                            <div class="single-footer-widget">
-                                <h4>contact us</h4>
-                                <div class="footer-c-info">
-                                    <span class="c-icon"><i class="zmdi zmdi-pin"></i></span>
-                                    <span class="c-text">House No 08, Road No 08, Mah Hya, Dhaka, Bangladesh</span>
-                                </div>
-                                <div class="footer-c-info">
-                                    <span class="c-icon"><i class="zmdi zmdi-email"></i></span>
-                                    <span class="c-text">Username@gmail.com</span>
-                                    <span class="c-text">Damo@gmail.com</span>
-                                </div>
-                                <div class="footer-c-info">
-                                    <span class="c-icon"><i class="zmdi zmdi-phone"></i></span>
-                                    <span class="c-text">+660 256 24857</span>
-                                    <span class="c-text">+660 256 24857</span>
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="col-lg-2 col-md-4 col-sm-5">
                             <div class="single-footer-widget">
                                 <h4>COMPANY</h4>
@@ -283,8 +351,8 @@
                                         <a href="blog-details.html"><img src="assets/images/blog/s-1.jpg" alt=""></a>
                                     </div>
                                     <div class="footer-post-text">
-                                        <a href="blog-details.html" class="p-title">The Yellow Chilli</a>
-                                        <a class="f-post-date" href="blog.html">Snap Fitness</a>
+                                        <a href="https://theyellowchillime.com/" class="p-title">The Yellow Chilli</a>
+                                        <a class="f-post-date" href="https://www.snapfitness.com/ae">Snap Fitness</a>
                                     </div>
                                 </div>
                                 <div class="footer-post">
@@ -292,8 +360,8 @@
                                         <a href="blog-details.html"><img src="assets/images/blog/s-2.jpg" alt=""></a>
                                     </div>
                                     <div class="footer-post-text">
-                                        <a href="blog-details.html" class="p-title">NB Ventures</a>
-                                        <a class="f-post-date" href="blog.html">Vanity Kart</a>
+                                        <a href="https://nbventuresme.com/" class="p-title">NB Ventures</a>
+                                        <a class="f-post-date" href="https://vktechnologiesme.com/">Vanity Kart</a>
                                     </div>
                                 </div>
                                 <div class="footer-post">
@@ -319,10 +387,9 @@
         </footer>
         <!-- Footer Area End -->
 
+        
 
-
-       
-		<!-- JS
+        <!-- JS
         ============================================ -->
 
         <!-- Modernizer & jQuery JS -->
@@ -345,6 +412,6 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
-        
+
     </body>
 </html>
